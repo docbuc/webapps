@@ -1,4 +1,4 @@
-# Datei: joomla/docker-compose.yml
+# Datei: webapps/joomla/docker-compose.yml
 version: '3.1'
 services:
   joomla:

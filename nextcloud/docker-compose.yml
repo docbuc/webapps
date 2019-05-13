@@ -1,4 +1,5 @@
-version: '2'
+# Datei: webapps/nextcloud/docker-compose.yml
+version: '3'
 services:
   db:
     image: mariadb:10
@@ -27,16 +28,9 @@ services:
       - 8080:80
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
-    volumes_from:
-      - app
+      - nextcloud:/var/www/html
+      - nextcloud_data:/var/www/html/data
     restart: unless-stopped
-#   collabora:
-#     image: collabora/code
-#     cap_add:
-#       - MKNOD
-#     environment:
-#       - domain=localhost
-#     restart: unless-stopped
 volumes:
   db:
   nextcloud:

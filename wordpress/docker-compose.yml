@@ -1,7 +1,8 @@
+# Datei: webapps/wordpress/docker-compose.yml
 version: '3'
 services:
   web:
-    image: wordpress:php7.2-apache
+    image: wordpress:apache
     restart: unless-stopped
     volumes:
       - webdata:/var/www/html

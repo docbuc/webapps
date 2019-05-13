@@ -1,3 +1,4 @@
+# Datei: webapps/wordpress-secrets/docker-compose.yml
 version: '3.5'
 services:
   wordpress:

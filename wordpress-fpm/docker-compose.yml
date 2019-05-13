@@ -1,3 +1,4 @@
+# Datei: webapps/wordpress-fpm/docker-compose.yml
 version: '3.1'
 services:
   nginx:
