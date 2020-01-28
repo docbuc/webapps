@@ -2,7 +2,7 @@
 version: '3.1'
 services:
   joomla:
-    image: joomla:apache-php7
+    image: joomla:apache
     ports:
       - 8080:80
     volumes:
